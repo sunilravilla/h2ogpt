@@ -2390,7 +2390,7 @@ def go_gradio(**kwargs):
 
     demo.queue(
         concurrency_count=kwargs['concurrency_count'], api_open=kwargs['api_open'])
-    favicon_path = "h2o-logo.svg"
+    favicon_path = "https://cdn2.hubspot.net/hubfs/494075/images/favicon.png"
     if not os.path.isfile(favicon_path):
         print("favicon_path=%s not found" % favicon_path, flush=True)
         favicon_path = None
